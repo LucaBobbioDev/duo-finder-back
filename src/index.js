@@ -4,8 +4,11 @@ const express = require('express')
 //Criando a aplicação
 const app = express()
 
-//Declarando a porta
-const port = 3000
+//dotenv
+require('dotenv').config()
+
+//Porta da aplicação
+const port = process.env.SERVER_PORT
 
 //req -> soliticação
 //res -> resposta
